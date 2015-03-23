@@ -1,5 +1,6 @@
 package cat.copernic.prueba2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -13,7 +14,7 @@ public class MainActivity extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toast.makeText(this, "", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "In onCreate", Toast.LENGTH_LONG).show();
     }
 
 
@@ -37,5 +38,12 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this, "BackPressed", Toast.LENGTH_LONG).show();
+        startActivity(new Intent(this, Branca2Activity.class));
+        super.onBackPressed();
     }
 }
