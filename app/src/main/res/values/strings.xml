@@ -5,4 +5,6 @@
     <string name="action_settings">Settings</string>
 
     <string name="StringDemostracion">DEMOSTRACION DE QUE EL PULL FUNCIONA</string>
+    
+    <string name="StringDemostracion2">DEMOSTRACION DE QUE EL PULL FUNCIONA 2</string>
 </resources>
